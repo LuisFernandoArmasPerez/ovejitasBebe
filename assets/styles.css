@@ -1,0 +1,172 @@
+/* -------------------------------------   Estilo seccion Bienvenida   ----------------------------------------------*/
+
+/* Fondo de la página */
+.bg-container {
+    background-image: url('../assets/images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #4B2E39;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+    .bg-container {
+        background-size: 180%;
+        background-position: 40% 40%;
+        height: 80vh;
+    }
+}
+
+/* Estilo para el Titulo */
+.title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4B2E39;
+    text-shadow: 2px 2px #FFF;
+}
+
+/* Estilo para el subtitulo*/
+.subtitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5rem;
+    color: #D29191;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto*/
+.text-center.mb-4 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/* Estilo para botones redes sociales */
+.social-buttons-welcome {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.social-buttons-welcome .btn-social {
+    color: #4B2E39;
+    background-color: #c0dcfc;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+.social-buttons-welcome .btn-social:hover {
+    background-color: #c0dcfc;
+    color: white;
+}
+
+/* Estilo Botón de catálogo sección bienvenida */
+.btn-catalog {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4B2E39;
+    background-color: #c0dcfc;
+    border: 2px solid #4B2E39;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-catalog:hover {
+    background-color: #4B2E39;
+    color: #FFE0E0;
+}
+
+/* ----------------------------------------------  Sección Catálogo  --------------------------------------------------*/
+                                         
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #4B2E39;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.catalog-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.catalog-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.catalog-card .card-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4B2E39;
+    margin-bottom: 5px; /* Espacio entre título y descripción */
+}
+
+.catalog-card .card-text {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5rem;
+    color: #8ec1fc;
+    margin-bottom: 10px; /* Espacio entre descripción y botón */
+}
+
+.catalog-card .btn-catalog {
+    margin-top: 10px; /* Espacio entre contenido y botón */
+    background-color: #c0dcfc;
+    color: #4B2E39;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.catalog-card .btn-catalog:hover {
+    background-color: #4B2E39;
+    color: #FFE0E0;
+}
+
+/* --------------------------------------------  Sección footer   ----------------------------------------------------*/
+footer {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4B2E39; 
+    font-size: 16px; 
+}
+
+/* Estilo para el parrafo del footer */
+footer p {
+    margin: 0; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #4B2E39; 
+    font-size: 20px; 
+}
+
+.social-buttons-footer {
+    position: relative;
+}
+
+.social-buttons-footer .btn-social {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #4B2E39; /* Color del ícono */
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    margin-left: 10px; /* Espaciado */
+    transition: color 0.3s ease; /* Transición al pasar el mouse */
+}
+
+.social-buttons-footer .btn-social:hover {
+    color: #FFE0E0; /* Color al pasar el mouse */
+}
+
