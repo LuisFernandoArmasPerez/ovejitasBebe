@@ -2,19 +2,19 @@
 const products = [
     {
         id: 1,
-        imgSrc: "assets/images/ropita1.jpg",
+        imgSrc: "assets/images/ConjuntoSelva.jpg",
         title: "Conjunto Selva",
         price: "17.000",
         buyLink: "https://articulo.mercadolibre.com.ar/MLA-1457499339-conjunto-bebe-selva-verano-3-6-meses-_JM",
-        category: "ropa" // Ejemplo de categoría
+        category: "conjunto"
     },
     {
         id: 2,
-        imgSrc: "assets/images/ropita2.jpg",
+        imgSrc: "assets/images/EnteritoOsito.jpg",
         title: "Enterito Osito",
         price: "17.000",
         buyLink: "https://articulo.mercadolibre.com.ar/MLA-1949895746-enterito-osito-azul-bebe-3-6-meses-_JM",
-        category: "juguetes" // Ejemplo de categoría
+        category: "enterito"
     },
     // Agrega más productos aquí...
 ];
@@ -26,11 +26,16 @@ function createCards() {
     products.forEach(product => {
         // Crear el elemento card
         const col = document.createElement('div');
-        col.className = 'col-md-4';
+        col.className = 'col-12 col-sm-6 col-md-3';
+
         const card = document.createElement('div');
         card.className = 'card shadow-sm catalog-card';
-        card.setAttribute('data-id', product.id); // Asignar el ID como data attribute
-        card.setAttribute('data-category', product.category); // Asignar la categoría como data attribute
+        card.setAttribute('data-id', product.id);
+        card.setAttribute('data-category', product.category);
+
+        // Agrego atributos de AOS para animación
+        card.setAttribute('data-aos', 'zoom-in-right');
+        card.setAttribute('data-aos-duration', '1500');
 
         const img = document.createElement('img');
         img.src = product.imgSrc;
@@ -62,6 +67,9 @@ function createCards() {
         col.appendChild(card);
         container.appendChild(col);
     });
+
+    // Inicializar AOS para las nuevas tarjetas
+    AOS.init();
 }
 
 // Llamar a la función para crear las cards
