@@ -1,0 +1,34 @@
+
+/* --------------------------------------------  Sección footer   ----------------------------------------------------*/
+footer {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4B2E39; 
+    font-size: 16px; 
+}
+
+/* Estilo para el parrafo del footer */
+footer p {
+    margin: 0; 
+    font-family: 'Pacifico', cursive; 
+    color: #4B2E39; 
+    font-size: 20px; 
+}
+
+.social-buttons-footer {
+    position: relative;
+}
+
+.social-buttons-footer .btn-social {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #4B2E39;
+    background-color: transparent;
+    border: none; 
+    margin-left: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.social-buttons-footer .btn-social:hover {
+    color: #FFE0E0; 
+}
+

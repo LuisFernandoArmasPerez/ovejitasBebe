@@ -1,0 +1,95 @@
+
+/* -------------------------------------   Estilo seccion Bienvenida   ----------------------------------------------*/
+
+/* Fondo de la página */
+.bg-container {
+    background-image: url('../images/Logo.png');
+    background-size: 40%; /* Ajusta el tamaño inicial del logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: #4B2E39;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ajuste responsivo para Logo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .bg-container {
+        background-size: 70%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-container {
+        background-size: 90%; 
+    }
+}
+
+/* Estilo para el Titulo */
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #4B2E39;
+    text-shadow: 2px 2px #FFF;
+}
+
+/* Estilo para el subtitulo*/
+.subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #D29191;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto*/
+.text-center.mb-4 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/* Estilo para botones redes sociales */
+.social-buttons-welcome {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.social-buttons-welcome .btn-social {
+    color: #4B2E39;
+    background-color: #c0dcfc;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+.social-buttons-welcome .btn-social:hover {
+    background-color: #c0dcfc;
+    color: white;
+}
+
+/* Estilo Botón de catálogo sección bienvenida */
+.btn-catalog {
+    font-family: 'Pacifico', cursive;
+    color: #4B2E39;
+    background-color: transparent;
+    border: 4px solid #4B2E39;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-catalog:hover {
+    background-color: #4B2E39;
+    color: #FFE0E0;
+}
+
+.catalog-card,
+.title,
+.subtitle {
+    will-change: transform, opacity;
+}
+

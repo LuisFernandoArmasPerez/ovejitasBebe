@@ -1,0 +1,28 @@
+
+/* --------------------------------------------  Sección filtrado de productos   ----------------------------------------------------*/
+
+/* Clase para mantener botones de filtrado fijo en la parte superior */
+.sticky-filter {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+/* Estilo Botón de catálogo sección bienvenida */
+.btn-filter {
+    font-family: 'Pacifico', cursive;
+    color: #4B2E39;
+    background-color:  #fcfbfb;
+    border: 4px solid #4B2E39;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-filter:hover {
+    background-color: #4B2E39;
+    color: #FFE0E0;
+}

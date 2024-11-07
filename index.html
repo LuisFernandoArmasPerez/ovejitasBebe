@@ -5,64 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ovejitas Bebés</title>
-    
-    <!-- Google Fonts: Pacifico -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
+    <!-- Tab icon -->
+    <link rel="icon" href="assets/images/Logo.png">
+
     <!-- js effect for images -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
+    <!-- Google Fonts: Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/cardStyle.css">
+    <link rel="stylesheet" href="assets/css/footerStyle.css">
+    <link rel="stylesheet" href="assets/css/welcomeStyle.css">
+    <link rel="stylesheet" href="assets/css/filtersStyle.css">
 </head>
 
 <body>
+    <div class="background-container">
+        <!-- Sección de Bienvenida -->
+        <section id="bienvenida">
+            <div class="overlay">
+                <div class="container-fluid bg-container text-center">
+                    <div class="row align-items-end justify-content-center h-100">
 
-    <!-- Sección de Bienvenida -->
-    <section id="bienvenida">
-        <div class="overlay">
-            <div class="container-fluid bg-container text-center">
-                <div class="row align-items-end justify-content-center h-100">
-
-                    <!-- Título principal en el centro inferior -->
-                    <div class="col-12 text-center mb-4">
-                        <h1 class="title">Ovejitas</h1>
-                        <h2 class="subtitle" data-text="BEBÉS">Bebés</h2>
-
-                        <!-- Botón de catálogo -->
-                        <a href="javascript:void(0)" class="btn btn-catalog" onclick="scrollToCatalogo()">Catálogo</a>
-
+                        <!-- Título principal en el centro inferior -->
+                        <div class="col-12 text-center mb-4">
+                            <!-- Botón de catálogo -->
+                            <a href="javascript:void(0)" class="btn btn-catalog" onclick="scrollToCatalogo()">Catálogo</a>
+                        </div>
+                    </div>
+                    <!-- Botón de redes sociales -->
+                    <div class="social-buttons social-buttons-welcome">
+                        <a href="https://www.instagram.com/tiendaovejitasvebes/" class="btn btn-social"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- Botón de redes sociales -->
-                <div class="social-buttons social-buttons-welcome">
-                    <a href="https://www.instagram.com/tiendaovejitasvebes/" class="btn btn-social"><i
-                            class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <!-- Sección de Catálogo y Sección filtro para productos-->
+        <section id="catalogo" class="container py-2">
+            <div class="sticky-filter">
+                <!-- Botones de filtro -->
+                <div class="text-center mb-5">
+                    <button class="btn btn-filter" onclick="filterCards('all')">Todos</button>
+                    <button class="btn btn-filter" onclick="filterCards('enterito')">Enteritos</button>
+                    <button class="btn btn-filter" onclick="filterCards('conjunto')">Conjuntos</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Sección de Catálogo -->
-    <section id="catalogo" class="container py-5">
-        <!-- Botones de filtro -->
-        <div class="text-center mb-5">
-            <button class="btn btn-catalog" onclick="filterCards('all')">Todos</button>
-            <button class="btn btn-catalog" onclick="filterCards('enterito')">Enterito</button>
-            <button class="btn btn-catalog" onclick="filterCards('conjunto')">Conjunto</button>
-        </div>
-
-        <!-- Cards dinamicas -->
-        <div class="row" id="card-container">
-        </div>
-        
-    </section>
+            <!-- Cards dinámicas -->
+            <div class="row" id="card-container"></div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-4" style="background-color: #c0dcfc;">
@@ -77,14 +79,15 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/scroll.js"></script>
     <script src="assets/scripts/products.js"></script>
     <script src="assets/scripts/filterCards.js"></script>
+    <script src="assets/scripts/productCards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
