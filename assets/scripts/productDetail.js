@@ -9,7 +9,8 @@ if (selectedProduct) {
     const productPrice = document.getElementById('product-price');
     const productDescription = document.getElementById('product-description');
     const productSize = document.getElementById('product-size');
-    const buyLink = document.getElementById('buy-link');
+    const buyLinkML = document.getElementById('buy-link-ml');
+    const buyLinkWA = document.getElementById('buy-link-wa');
 
     // Asignamos las propiedades del producto
     productImg.src = selectedProduct.imgSrc;
@@ -18,7 +19,16 @@ if (selectedProduct) {
     productPrice.textContent = `${selectedProduct.price}`;
     productDescription.textContent = selectedProduct.description;
     productSize.textContent = selectedProduct.size;
-    buyLink.href = selectedProduct.buyLink;
+    
+    // Enlace de MercadoLibre
+    buyLinkML.href = selectedProduct.buyLink;
+
+    // Número de WhatsApp (modifícalo con el número real)
+    const whatsappNumber = '5491126704672';
+    
+    // Enlace de WhatsApp con mensaje personalizado
+    const whatsappMessage = `Hola, estoy interesado en este producto: ${selectedProduct.title} - ${selectedProduct.buyLink}`;
+    buyLinkWA.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 } else {
     // Mensaje de error y redirección en caso de datos faltantes
